@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row mybox2 p-5">
+<div class="col-sm-8 offset-sm-2">
+	<h1>{{news.subject}}</h1>
+	<hr>
+	<p><strong>News Date :: </strong> {{ news.n_date }}</p>
+	<p><strong>Description :: </strong>{{ news.description }}</p>
+	<img class="img-fluid" src="/media/{{news.image}}"><br><br>
+<!-- 	<a class="btn btn-primary" href='{{news.link}}'>Read News</a><br><br> -->
+	<a class="btn btn-dark" href='/factory/news'>Back</a>
+</div>
+</div>
+{% endblock %}

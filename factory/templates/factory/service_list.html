@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}Services{% endblock title %}
+{% block content %}
+<!-- Start: breadcrumb -->
+<section class="breadcrumb-section">
+   <div class="container pl-3 pr-3 p-sm-3 ">
+     <div class="row">
+       <div class="col-12">
+       
+         <nav class="breadcrumb">
+           <a style="text-decoration: none" class="breadcrumb-item"  href="/">Home</a>
+           <span class="breadcrumb-item active">Service</span>
+         </nav>
+       </div>
+     </div>
+   </div>
+</section>
+<!-- End: breadcrumb -->
+
+<h1 class="mybox text-center p-3">Our Services </h1>
+<hr>
+<!-- start-search -->
+<form class="form-inline container">
+<input class="form-control" placeholder="Search" value="{{ request.GET.si }}" type="text" name="si" />
+<input class="btn btn-dark mx-3" type="submit" /> 
+{% if user.is_superuser %}
+&nbsp <a class="btn btn-dark" href="/factory/service/create/"><span class="fa fa-plus"></span></a>
+{% endif %}
+</form>
+<!-- end-search -->
+
+ <div class="tz-gallery p-5"> 
+	<div class="row mybox2 text-center">
+	{% for n1 in service_list %}
+		<div class="col-sm-4 p-3">
+			<div class="card mycard thumbnail">
+		    	<img class="card-img-top img-fluid" src="/media/{{n1.image}}">
+			   	 	<div class="card-body">
+			        	<h4 class="card-title">{{n1.name}}</h4>
+			        	
+						<a class="btn btn-primary" href='/factory/service/{{n1.id}}'>Read More</a>
+						{% if user.is_superuser %}
+						<a class="btn btn-danger btn-sm" href='/factory/service/delete/{{n1.id}}'><span class="fa fa-trash"></span></a> 
+			    		{% endif %}
+			    	</div>
+			</div>
+		</div>
+	{% endfor %}
+	</div>
+</div>
+
+{% endblock %}

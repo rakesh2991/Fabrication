@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row mybox2 p-5">
+<div class="col-sm-8 offset-sm-2">
+	<h1>{{product.name}}</h1>
+	<hr>
+<!-- 	<p><strong>Location :: </strong> {{ product.location }}</p> -->
+	<p><strong>Event Date :: </strong>{{ product.e_date }}</p>
+	<p><strong>Event Type :: </strong>{{ product.event_type }}</p>
+	<p><strong>Description :: </strong>{{ product.description }}</p>	
+	<img class="img-fluid" src="/media/{{product.image}}"><br><br>
+	<a class="btn btn-dark" href='/factory/product'>Back</a>
+</div>
+</div>
+{% endblock %}

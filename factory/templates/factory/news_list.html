@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="mybox text-center p-3">Latest Update Product News!</h1>
+<hr>
+<div class="row mybox2 text-center p-5">
+<table class="table table-striped">
+<thead class="thead-dark">
+<tr>
+<th>Subject</th>
+<th>Date</th>
+<th>Read More</th>
+</tr>
+</thead>
+{% for n1 in news_list %}
+<tr>
+<td>{{n1.subject}}</td>
+<td>{{n1.n_date}}</td>
+<td><a class="btn btn-dark" href="/factory/news/{{n1.id}}">Read More</a></td>
+</tr>
+{% endfor %}
+</table>
+</div>
+{% endblock %}

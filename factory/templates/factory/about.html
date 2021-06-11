@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block content %}
+<!-- Start: About us -->
+ <section class="breadcrumb-section">
+    <div class="container pl-3 pr-3 p-sm-3">
+      <div class="row">
+        <div class="col-12">
+          
+          <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="/">Home</a>
+            <span class="breadcrumb-item active">About</span>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+   <section class="about-company-selection">
+     <div class="container p-1 p-sm-1">
+       <div class="row">
+           <div class="col-12 text-left">
+             <h1>We Are</h1>
+             <hr>
+           </div>
+           
+           <div class="col-md-8">
+             <!-- <img class="img-fluid p-2  " src="image/logo/logo_semple.png" width="200" alt=""> -->
+             <p class="text-justify text-dark">
+         Incepted in the year of 2001, <b> "Sanraj Enterprises" </b>, is known in the market as reputed Manufacturer and supplier 
+           striving for total customer satisfactions by offering superior-quality, excellent-performance and user-friendly 
+           Material Handling Products. Our wide range of products includes 
+           <b>
+           Hyduraulic system, 
+           Hydraulic Jack & Pump, 
+           Power Pack,
+           Puller,
+           All types of Lubrication System,
+           Idler,
+           Roller,
+           Submerged,
+           Scrapper,
+           Sceening conveyor,
+           Bucket Elevator Drag Chain Feeder,
+           Chain Sling,
+           Forged lick chain,
+           Apron/Dpc,
+           Protable & Slat Conveyar,
+           Reparing Of Gear Box,
+           
+             Industrial Speciality Lubricant & Oil, MRO, Aerosole Product</b> 
+           All products are highly treasured due to their robustness, superior-quality efficient performance and high 
+           durability. All our products are manufactured from the quality tested raw material and cutting edge technology
+           as per the industry set norms. Owing to our experience, we have been successful in catering to the requirements 
+           of our esteem clients in Indian market.
+             </p>
+
+             <p class="text-justify text-dark">
+               Our overwhelming success in the industry is purely based on the hard work of our workforce and our updated modern
+                infrastructure. Owing to our product know-how and rich industrial experience we are able to cater to customized
+                 requirements of our clients. Our products are made under the supervision of our experts and using advanced 
+                 technology. This team also tests entire developed gamut in our maintained quality checking wing to ensure absolute
+                  perfection, prior to dispatch. Moreover, our skilled business ethics and easy payment options have enabled us to 
+                  serve various esteemed clients. Our quality conscious approach along with advanced technological methods has
+                   helped us in offering huge client base.
+             </p>
+           </div>
+             <div class="col-md-4 text-justify">
+               
+                 <div class="p-2">
+                   <span><h5 class="text-secondary">Year of Establishment</h5></span>
+                   <span>2001</span>
+                 </div>
+                 
+                 <div class="p-2">
+                   <span><h5 class="text-secondary">Nature of Business</h5></span>
+                   <span>Manufacturer & Trader</span>
+                 </div>
+
+                 <div class="p-2">
+                   <span><h5 class="text-secondary">Number of Employees</h5></span>
+                   <span>11 yo 25 people</span>
+                 </div>
+
+                 <div class="p-2">
+                   <span><h5 class="text-secondary">GST No</h5></span>
+                   <span>22ACYFS0946H1ZR</span>
+                 </div>
+                 
+                 <div class="p-2">
+                   <span><h5 class="text-secondary">Legal Status of Firm</h5></span>
+                   <span>PatenerShip</span>
+                 </div>
+
+                 <div class="p-2">
+                   <span><h5 class="text-secondary">Annual Turnover</h5></span>
+                   <span>Rs. 50K - 1C </span>
+                 </div>
+
+                 <div class="p-2">
+                   <span><h5 class="text-secondary"><a href="#"> Vishwakarma Ago Industries </a> Member Since</h5></span>
+                   <span>1988 </span>
+                 </div>
+
+             </div>
+
+            
+         </div>
+       </div>
+     </div>
+
+   </section>
+   <!-- End: about -->
+
+   
+  
+   <!-- Start: newsletter section -->
+<section class="home-newsletters p-2 pt-md-2 pb-md-2">
+<div class="row p-3">
+ <div class="col-12 text-center">
+  <form method="post" action="/about">
+    {% csrf_token %}
+   <h3>Subscribe to Our Newsletter</h3>
+ </div>
+ <div class="input-group mb-3 p-3">
+  <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+  <span class="input-group-btn"></span>
+     <button class="btn btn-theme" type="submit">Subscribe</button>
+   </div>
+   
+ </div>
+</form>
+</div>
+</div>
+ </section>
+    <!-- End: news latter section -->
+{% endblock %}

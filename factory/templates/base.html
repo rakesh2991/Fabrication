@@ -1,0 +1,247 @@
+<!-- {% load static %} -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="/static/css/style.css" rel="stylesheet" />
+	-->
+    
+    <title> {% block title %}  {% endblock title %} | Sanrajenterprises</title>
+    <!-- add icon link -->
+    <link rel = "icon" href ="/static/images/logo/LOGO.jpg" type = "image/x-icon" />
+    <!-- ------------------------------------------------------------------------ -->
+	<link href="{% static 'vender/bs/css/bootstrap.min.css'%}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'vender/fa/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" />
+	<script src="{% static 'vender/jquery-3.3.1.min.js'%}"></script>
+	<script src="{% static 'vender/popper.min.js'%}"></script>
+	<script src="{% static 'vender/bs/js/bootstrap.min.js'%}"></script>
+   <!--     ------------------------------------------------------------------------------- -->
+  </head>
+  <body>
+  <!-- start: header -->
+  <header>
+    <div class="p-2" id="topHeader">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-right">
+                  <div class="col-lg col-xs text-right">                     
+                    <a style="text-decoration: none"; class="p-1" href="tel:+917008100600" > <i class="fa fa-phone-square text-info" ></i>&nbsp&nbsp7008100600</a>
+                    <a style="text-decoration: none"; class="p-1" href="mailto:sanrajenterprisesraipur@gmail.com"><i class="fa fa-envelope text-info"></i>&nbsp&nbspsanrajenterprisesraipur@gmail.com</a>
+                  </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#e15f41;" >
+      <a class="navbar-brand" href="">
+         <img  src="/static/images/logo/LOGO1.png" width="350" alt="company logo" />    
+      </a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+        <ul class="navbar-nav mr-5 mt-2 mt-lg-0 ">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">   <!-- servce ke aage or data hai is li9ya "/" ka use kiya gaya hai -->
+            <a class="nav-link" href="/factory/service/">Service</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/factory/product">Product</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/factory/about">About Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/factory/contact">Contact Us</a>
+          </li>
+          
+          <li class="nav-item">
+              <a class="nav-link" href="/factory/news/">News</a>
+          </li>
+          
+          <li class="nav-item">
+              <a class="nav-link" href="/factory/vender/create">Join Us</a>
+          </li>            
+			 
+	{% if user.is_superuser %}
+	<li class="nav-item">   <!-- superuser show a create service navbar  -->
+            <a class="nav-link" href="/factory/service/create/">Service_create</a>
+          </li>
+          
+          <li class="nav-item">  
+            <a class="nav-link" href="/factory/product/create/">product_create</a>
+          </li>
+          
+          <li class="nav-item">
+              <a class="nav-link" href="/admin">Admin</a>
+          </li>
+          
+          <li class="nav-item">
+              <a class="nav-link" href="/accounts/logout">Logout</a>
+          </li>
+          
+    {% endif %}
+    	  <li class="nav-item">
+              <a class="nav-link" href="/accounts/login">Login</a>
+          </li>
+		
+        </ul>
+        
+      </div>
+    </nav>
+
+</header>
+
+{% block content %}
+{% endblock %}
+<!-- start: Brand -->
+<section class="pt-3 pb-4 clients-section">
+  <div class="container">
+       <div class="row mt-4">
+           <div class="col text-center">
+             <h3 class="text-dark">
+               Authorized Bussiness Patner 
+             </h3>
+             <hr class="bg-warning" width="900">
+           </div>
+         </div>
+   
+		<!-- <div class="container"> -->
+		<div class="row text-center ">
+			<div class="col-md-3 col-sm-6 col-xs-12 align-items-center">
+			<img class="img-fluid feature-img p-2" src="/static/images/logo/DROP.png" alt="Card image cap">
+			</div>
+		
+			<div class="col-md-3 col-sm-6 col-xs-12 ">
+			<img class="img-fluid feature-img p-2" src="/static/images/logo/FLEXCO.png" alt="Card image cap">
+			</div>
+			
+			<div class="col-md-3 col-sm-6 col-xs-12 ">
+			<img class="img-fluid feature-img p-2" src="/static/images/logo/ITW.png" alt="Card image cap">
+			</div>
+		
+			<div class="col-md-3 col-sm-6 col-xs-12  ">
+			<img class="img-fluid feature-img p-2" src="/static/images/logo/RUB.png" alt="Card image cap">
+			</div>
+		                                
+		</div>
+	</div>
+</section>
+<!-- End: Brand -->
+
+<!-- start: footer -->
+<footer>
+<div class="footer-top">
+	<div class="container-fluid">
+		<div class="row">
+			<div class ="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
+			  <img class="text-info" src="/static/image/logo/LOGO.jpg" alt="">  
+			  <br>
+			  	<h3 class="text-justify">SANRAJ ENTERPRISES</h3>
+			    <br>
+				    <p><i class="fa fa-industry text-warning" aria-hidden="true"></i> <b>Factory </b> : C/o Vishwakarma Agro, Dhanlakshmi Nagar, Bhanpuri, Raipur (C.G) </p> 
+				    <br>
+				    <p><i class="fa fa-industry text-warning" aria-hidden="true"></i> <b> Office:</b> Near Bhanpuri Chowk, Sharma Complex, Bhanpuri, Raipur (C.G) </p> 
+			</div>
+			
+			<div class ="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+			    <h2>Usefull Link</h2>
+			    <ul>
+			        <li><a href="/factory/home/">Home</a></li>
+			        <li><a href="/factory/service/">services</a></li>
+			        <li><a href="/factory/product/">Product</a></li>
+			        <li><a href="/factory/about/">About Us</a></li>
+			        <li><a href="/factory/contact/">Contact</a></li>
+			    </ul>
+			    <br>
+			    <h2>Visit Site</h2>
+			    <br>
+			    <img class="text-left" src="https://hitwebcounter.com/counter/counter.php?page=7432541&style=0024&nbdigits=5&type=page&initCount=0" title="Web Counter" Alt="counter free"   border="0" >      </a> 
+			</div>
+			
+			<div class ="col-md-3 col-sm-6 col-xs-12 segment-three sm-mb-30">
+				<h2>follow us</h2>
+					<p>please follow us on our socal mediaprofile in order to keep update</p>
+					<a href="#"><i class="fa fa-facebook"> </i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				<br><br>
+				<h2>Working Hours</h2> <br>
+			
+			   	<div>
+			      <p> Mon to Sat 9:00 Am to 8:00 Pm</p>
+			       <p ><span class="text-danger"> Sunday </span> close   </p>  
+			   	</div>
+			</div>
+							
+			<div class ="col-md-3 col-sm-6 col-xs-12 segment-four sm-mb-30">
+			   <h2>Contact Us</h2>
+				   <p><i class="fa fa-whatsapp text-success"></i> <b>7008100600</b> </p>
+				   <p><i class="fa fa-envelope text-danger "></i> sanrajenterprisesraipur@gmail.com </p>
+						
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.3949712357507!2d81.6381352144118!3d21.
+			  29540408399893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28e7a7ccf15c05%3A0x3fe860d17599e51f!2sSANR
+			  AJ%20ENTERPRISES!5e0!3m2!1sen!2sin!4v1591024169127!5m2!1sen!2sin" frameborder="0"></iframe>
+			</div>
+			<br>				   
+			</div>
+		</div>                   
+	</div>
+</div>
+<p class="footer-bottom-text">All Right Resrved by &copy; Rakesh Sharma 8770099860</p>
+</footer>
+<!-- End: footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- ------Start:  carousel-------- -->
+<script>
+$('.carousel').carousel({
+ interval: 5000
+})
+
+</script>
+<!-- ------End:  carousel------- -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>-->
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

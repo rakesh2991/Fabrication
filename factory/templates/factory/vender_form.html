@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="row">
+	<div class="col-sm-6 offset-sm-3 mybox p-4">
+		<h1>Join Us</h1>
+		<hr>
+		<form enctype="multipart/form-data" method="post">
+		{% csrf_token %}
+		{{ form|crispy }}
+		<div class="form-row">
+	                                        
+			<input class="btn btn-primary btn-block " type="submit" value="Join"/>
+		</form>	
+	</div>
+</div>
+
+{% endblock %}

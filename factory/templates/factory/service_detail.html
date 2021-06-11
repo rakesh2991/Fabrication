@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row mybox2 p-5">
+<div class="col-sm-8 offset-sm-2">
+	<h1>{{service.name}}</h1>
+	<hr>
+<!-- 	<p><strong>Phone No :: </strong> {{ service.phone_no }}</p>
+	<p><strong>Starting Price :: </strong>{{ service.price }}</p> -->
+	<p><strong>Description :: </strong>{{ service.description }}</p>
+	<img class="img-fluid" src="/media/{{service.image}}"><br><br>
+	<a class="btn btn-dark" href='/factory/service'>Back</a>
+</div>
+</div>
+{% endblock %}

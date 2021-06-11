@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock title %}
+{% block content %}
+
+<!-- Start: breadcrumb -->
+<section class="breadcrumb-section">
+    <div class="container pl-3 pr-3 p-sm-3">
+      <div class="row">
+        <div class="col-12">
+          
+          <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="/">Home</a>
+            <span class="breadcrumb-item active">Contect</span>
+          </nav>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+    <!-- End: breadcrumb -->
+
+    <!-- start: contect -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <br>
+            <P>We are alway here to help.if your requrement about our server; fillup the 
+              contect from below and we'll do our best reply within 24 Alternatively 
+              simply pick the ans give us call.</P>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <div class="form-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <form action="/factory/contact/submit" method="post">
+                    {% csrf_token %}
+                    
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="name">Name</label>
+                            <input class="form-control" type="text" name="uname"  placeholder="Name">
+                            <br>
+                            <label for="email">Email address</label>
+                            <input class="form-control" type="email" name="email" placeholder="EMail">
+                            <br>
+                            <label for="phone">Phone Number</label>
+                            <input class="form-control" type="tel" name="phone_no" placeholder="Phone No">
+                            <br>
+                            <label>Tell me about what you want to contact me for...</label>
+                            <textarea class="form-control" placeholder="MSG" name="msg"></textarea>
+                            <br>
+                            <button class="btn btn-dark btn-block" type="submit">Submit</button>
+                        </div>
+                    </div>  
+                </form>       
+              </div>
+    
+        <!-- section 2 company profile derials -->
+          
+            <div class="col-md-6 address">
+              <h5>Call us / WhatApp</h5>
+              <p>  <i class="fa fa-phone text-success"></i> <a class="text-secondary" style="text-decoration: none"; href="tel:+918870099860"> +(91) 7008100600</a><br>
+              </p>
+              <h5  class="text-body">Email / website</h5>
+              <p>
+                 <i class="fa fa-envelope text-success"></i> <a   class="text-secondary" style="text-decoration: none"; href="milto:sanrajenterprisesraipur@gmail.com"> sanrajenterprisesraipur@gmail.com</a><br>
+                <!-- <a href="index.html"> <i class="fa-globe"></i>www.vishkarmaagro.com</a><br> -->
+              </p>
+              
+              
+              <h5>Working Hour</h5>
+              <p>
+               <i class="fa fa-clock text-success " aria-hidden="true"></i> <span  class="text-secondary"> mon - fri : 9am - 6pm </span> 
+              </p>
+
+              <h5>Address</h5>
+              <p> <i class="fa fa-location-arrow text-success" aria-hidden="true"></i> <span  class="text-secondary"> C/o Vishwakarma Agro, Dhanlakshmi Nagar, Bhanpuri, Raipur (C.G)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- Start: maplocation -->
+    <div class="container-fluid">
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.3949712357507!2d81.6381352144118!3d21.
+       29540408399893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28e7a7ccf15c05%3A0x3fe860d17599e51f!2sSANR
+       AJ%20ENTERPRISES!5e0!3m2!1sen!2sin!4v1591024169127!5m2!1sen!2sin" width="100%" height="400px" frameborder="0" style="border:0;"></iframe>
+
+    </div>
+    <!-- end: maplocation -->
+{% endblock %}

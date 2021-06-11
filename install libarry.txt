@@ -1,0 +1,28 @@
+
+pip install django-bootstrap4
+
+pip install django-registration-redux
+
+python -m pip install Pillow
+
+pip install Django
+
+----rest AAPI ke liya-----
+pip install djangorestframework
+
+pip install djangorestframework-jwt   (login ke use mai aata hai)
+
+
+
+note....  (user kE flow ke liya generaly 4 flow use hota hai) 
+
+
+view.py    mai  method ya class cretae hota hai
+urls.py    mai urls banta ta 
+tamleates  mai html csss java scrip image
+base.html(link)  mai ek linke banta ta multi page mai jane ke liya
+
+
+-----API ke case mai template jo html hai----------
+
+myserializer.py    mai class hota haai  (serializer  html se belong krrta hai )

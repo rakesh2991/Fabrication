@@ -1,0 +1,315 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if request.GET.msg %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Close</span>
+    </button>
+    <strong>fibracation!</strong> {{ request.GET.msg }}.
+</div>
+{% endif %}
+
+<!-- Start: introduction page -->
+    
+<div id="carouselId" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselId" data-slide-to="1"></li>
+    <li data-target="#carouselId" data-slide-to="2"></li>
+  </ol>
+  
+	  <div class="carousel-inner" role="listbox">
+	    <div class="carousel-item active">
+	      <img class="img-fluid d-block w-100 " src="/static/images/slider/HYDRAULIC MACHINE, POWER PACK, JACK AND PUMP.jpg" alt="First slide">
+	      <div class="carousel-caption d-none d-md-block">        
+	        <div class="p-2 mb bg-light text-dark text-monospace"> <h1>HYDRAULIC MACHINE, POWER PACK, JACK AND PUMP</h1></div>
+	      </div>
+	    </div>
+	    
+	    <div class="carousel-item">
+	      <img class="img-fluid d-block w-100 "  src="/static/images/slider/GREASE LUBRICATION SOLUTION AND MAINTANACE.jpg" alt="Second slide">
+	      	<div class="carousel-caption d-none d-md-block">
+	        	<div class="p-2 mb bg-light text-dark text-monospace"> <h1 class="text-uppercase">grease lubrication solutions and maintenance</h1></div>
+	        </div>
+	    </div>
+	    
+	    <div class="carousel-item">
+	      <img class="img-fluid d-block w-100 " src="/static/images/slider/FABRCATION AND MACHINE WORKS.jpg" alt="Third slide">
+	      <div class="carousel-caption d-none d-md-block">
+	        <div class="p-2 mb bg-light text-dark text-monospace"> <h1 class="text-uppercase">fabrication and machine works</h1></div>
+	     
+	      </div>
+	    </div>
+	    
+	    <div class="carousel-item">
+	      <img class="img-fluid d-block w-100 " src="/static/images/slider/HOSE.jpg" alt="forth">
+	      <div class="carousel-caption d-none d-md-block">
+	        <div class="p-2 mb bg-light text-dark text-monospace"> <h1 class="text-uppercase">hose pipe and accessories</h1></div>
+	      </div>
+	    </div>
+	    
+	    <div class="carousel-item">
+	      <img class="img-fluid d-block w-100 " src="/static/images/slider/BELT.jpg" alt="five">
+		      <div class="carousel-caption d-none d-md-block">
+		        <div class="p-2 mb bg-light text-dark text-monospace"> <h1 class="text-uppercase">belt solution</h1></div>
+		      </div>
+	    </div>
+	</div>
+	  
+	  <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  
+	  <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+</div>
+<!-- End:introducation page -->
+
+<!-- Start: About fibracation -->     
+<section class="p-2 pt-md-4 pb-md-4" style="background-color: #ffffff;">  
+  <div class="container">
+    <div class="row text-item-center ">
+      <div class="col-md-6">
+        <img class="img-fluid pt-4" src="/static/images/worker.png" width="550px" alt="">
+        
+      </div>
+      
+      <div class="col ml-md-6">
+        <h3 class="font-weight-bold">About Us</h3>
+        <br>
+	        <h6 class="text-justify ">
+	          Established in the year 2001, We are Perfect Engineering solution provider a notable and prominent Sole Proprietorship company
+	          that is engaged more then 20 years in manufacturing a wide range of Hydraulics System Power Pack, hosepipe, Hydraulics Pump & jack, 
+	          complete conveyour belt Maintenance solution, Lifting solution and mechanical job work etc. In field of specialty industrial 
+	          lubricants, MRO Products, All types of Lubrication Systems, located in Raipur (Chhatishgarh, India),
+	          we are supported by a well functional infrastructural unit
+	          that assists us in the manufacturing of a wide range of products as per the set industry norms. We are also provide
+	          all type of Service.
+	        </h6>
+        <br>
+        <a href="/factory/about/" >  <button class="btn btn-lg btn-primary">  Read more </button> </a>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br>
+<!-- End:fibracation -->
+
+<!-- Start:any reruirement -->
+<section class="requirement-section pt-1 pb-1 pt-md-3 pb-md-3">
+  <div class="container">
+    <div class="row text-item-center ">
+      <div class=" text-center col-md-9">
+        <br>
+        <h3>Do you have any requirement, We can do it for you!</h3>
+      </div>
+      <br>
+      <div class="text-center col-md-3">
+        <br>
+      <a style="text-decoration: none" href="/factory/contact/"> <button class="btn btn-lg btn-primary">Get started</button> </a>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br>
+<!-- End: Any reruirement -->
+    
+<!-- Start: why choose -->
+<section class="pt-3 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>
+          Lots of Fibracation company in town. Why you should choose us?
+        </h3>
+        <hr class="bg-warning" width="900">
+      </div>
+    </div>
+  </div>
+ 
+  <div class="container">
+	  <div class="row p-1">
+	       <div class="col-md-4 text-center ">
+		      <br>
+			      <img class="img-fluid qualities-img pb-3" src="/static/images/choose_us/customer.png" alt="">
+			      <h5>customized Requiremnt</h5>
+			      <!-- <p>Ever idea is unique and that's why craft it as per your requirement</p> -->
+		 	</div>
+	 
+			<div class="col-md-4 text-center ">
+			   <br>
+				   <img class="img-fluid qualities-img pb-3" src="/static/images/choose_us/serviceupdate.png" alt="">
+				   <h5>Service Uptime</h5>
+				   <!-- <p>We make sure that your product stay up 24/7 with us</p> -->
+			</div>
+	
+			<div class="col-md-4 text-center ">
+			   <br>
+				   <img class="img-fluid qualities-img pb-3" src="/static/images/choose_us/call.png" alt="">
+				   <h5>Quick support</h5>
+				   <!-- <p>We understand the seens of urency whenever our client need our help</p> -->
+			 </div>
+		</div>
+
+		<div class="row p-1">
+			  <div class="col-md-4 text-center ">
+			    <br>
+				    <img class="img-fluid qualities-img pb-3" src="/static/images/choose_us/quality.png" alt="">
+				    <h5>Quality  Assurence</h5>
+				    <!-- <p>Quality is the editice of our service and we make no compromise on it.</p> -->
+			 </div>
+		
+			<div class="col-md-4 text-center ">
+			   <br>
+				   <img class="img-fluid qualities-img pb-3" src="/static/images/choose_us/divilary.png" alt="">
+				   <h5>Delivery</h5>
+				   <!-- <p>When you thke a project to take you can be rest assured that it eill be Delivery me</p> -->
+			</div>
+		
+			 <div class="col-md-4 text-center ">
+			   <br>
+				   <img class="img-fluid qualities-img pb-3" src="/static/images/choose_us/monry.png" alt="">
+				   <h5>Value of money</h5>
+				   <!-- <p>Get the best services for the money you pay us. We assurence to give the valuue foe money</p> -->
+			 </div>
+		</div>
+   </div>
+</section>
+<!-- End: why choose -->
+<br><br>  
+<!-- start: Reparing and servise -->
+<section class="pt-3 pb-5">
+	<div class="container">
+		<div class="row bg-white">
+		  <div class="col-12 text-center">
+		    <br>
+			    <h3>
+			      Our Reparing and  Services
+			    </h3>
+			    	<hr class="bg-warning" width="900">
+		  </div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row p-4 bg-white">
+			<div class="col-md-4 text-center ">
+	  			<img class="img-fluid pb-3 " src="/static/images/service/800x600/Hydraulic Machine.jpg" width="100%" alt="">
+	  			<h5>Hydraulic System</h5>
+	 	   <!-- <p>All type of welding work</p> -->
+	  			<button type="button" class="btn btn-outline-info btn-lg btn-block"><a  style="text-decoration: none"; href="/factory/vender/create/"> Get Best Quote </a> </button>
+			</div>
+		
+			<div class="col-md-4 text-center ">
+				  <img class="img-fluid  pb-3" src="/static/images/service/800x600/centralized-lubrication-system.jpg" width="100%" alt="">
+				  <h5>Centerlize Lubrication System</h5>
+				  <!-- <p>all type of Reparing</p> -->
+				  <button type="button" class="btn btn-outline-info btn-lg btn-block"><a style="text-decoration: none"; href="/factory/vender/create/"> Get Best Quote </a> </button>
+			</div>
+		
+			<div class="col-md-4 text-center ">
+				  <img class="img-fluid  pb-3" src="/static/images/service/800x600/Repairing Of All Types of Power  Tool.jpg" width="100%" alt="">
+				  <h5> All Types of Power Tool</h5>
+				  <!-- <p>All type of create a matrial work</p> -->
+				  <button type="button" class="btn btn-outline-info btn-lg btn-block"><a style="text-decoration: none"; href="/factory/vender/create/"> Get Best Quote </a></button>
+			</div>
+		        
+		</div>
+		
+		<div class="row p-1 bg-white">
+			<div class="col-md-4 text-center ">
+				  <img class="img-fluid pb-3" src="/static/images/service/800x600/Repairing Of All of Hydraulic Jack & Pump.jpg" width="100%" alt="">
+				  <h5>All of Hydraulic Jack & Pump</h5>
+				  <!-- <p>heaby power press work. in all type .</p> -->
+				  <button type="button" class="btn btn-outline-info btn-lg btn-block"><a style="text-decoration: none"; href="/factory/vender/create/"> Get Best Quote </a></button>
+			</div>
+		
+			<div class="col-md-4 text-center ">
+				  <img class="img-fluid  pb-3" src="/static/images/service/800x600/Lifter.jpg" width="100%" alt="">
+				  <h5>Conveyour Belt Maintanance</h5>
+				  <!-- <p>all type of foegine work</p> -->
+				  <button type="button" class="btn btn-outline-info btn-lg btn-block"><a style="text-decoration: none"; href="/factory/vender/create/"> Get Best Quote </a></button>
+			</div>
+		
+			<div class="col-md-4 text-center ">
+				 <a href="/factory/service/"> <img class="img-fluid pb-3" src="/static/images/service/800x600/more.png" width="82%" alt=""> </a>
+				  <h5></h5>
+				  <!-- <p>View a all Service</p> -->
+				  <button " type="button" class="btn btn-outline-dark btn-lg btn-block"><a style="text-decoration: none"; href="/factory/service/"> More </a></button>
+				<br><br><br>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: our servise -->
+
+<!-- Start : Product -->
+<section class="pt-3 pb-5 ">
+	  <div class="container">
+	    <div class="row bg-white">
+	      <div class="col-12 text-center">
+	        <br><br>
+	        <h3 class="text-dark">
+	          Product Range    
+	        </h3>
+	        <hr class="bg-warning" width="900"  >
+	      </div>
+	     
+	    </div>
+	  </div>
+  
+	  <div class="container ">
+		  <div class="row p-4 bg-white">
+		    <div class="col-md-4 text-center ">
+		      <img class="img-fluid  pb-3" src="/static/images/Products/800x600/Fastner.jpg" alt="">
+		      <h5>Fastner</h5>
+		      <!-- <p>All type of welding work</p> -->
+		      <button type="button" class="btn btn-outline-info btn-lg btn-block"><a style="text-decoration: none"; href="/factory/vender/create/"> Get Best Quote </a> </button>
+		    </div>
+	
+		    <div class="col-md-4 text-center ">
+		      <img class="img-fluid  pb-3" src="/static/images/Products/800x600/Chain Pulley Block.jpg " alt="">
+		      <h5>Chain Pulley Block</h5>
+		      <!-- <p>all type of Reparing</p> -->
+		      <button type="button" class="btn btn-outline-info btn-lg btn-block"><a style="text-decoration: none"; href="/factory/vender/create/"> Get Best Quote </a> </button>
+		    </div>
+	
+		    <div class="col-md-4 text-center ">
+		      <img class="img-fluid  pb-3" src="/static/images/Products/800x600/Idler for conveyour.jpg" alt="">
+		      <h5>Idler for Belt conveyour</h5>
+		      <!-- <p>All type of create a matrial work</p> -->
+		      <button type="button" class="btn btn-outline-info btn-lg btn-block"><a style="text-decoration: none"; href="/factory/vender/create/"> Get Best Quote </a></button>
+		    </div>
+	      </div>
+	
+		  <div class="row p-1 bg-white">
+		    <div class="col-md-4 text-center ">
+		      <img class="img-fluid  pb-3" src="/static/images/Products/800x600/ITW Chemin Grease.jpg" alt="">
+		      <h5>ITW Chemin Grease</h5>
+		      <!-- <p>heaby power press work. in all type .</p> -->
+		      <button type="button" class="btn btn-outline-info btn-lg btn-block"><a style="text-decoration: none"; href="/factory/vender/create/"> Get Best Quote </a></button>
+		    </div>
+	
+		    <div class="col-md-4 text-center ">
+		      <img class="img-fluid  pb-3" src="/static/images/Products/800x600/Chain-link.jpg" alt="">
+		      <h5>Chain Link</h5>
+		      <!-- <p>all type of foegine work</p> -->
+		      <button type="button" class="btn btn-outline-info btn-lg btn-block"><a style="text-decoration: none"; href="/factory/vender/create/"> Get Best Quote </a></button>
+		    </div>
+	
+		    <div class="col-md-4 text-center ">
+		     <a href="/factory/product/"> <img class="img-fluid  pb-3" src="/static/images/service/800x600/more.png" width="84%" alt=""> </a>
+		      <!-- <h5>More</h5> -->
+		      <!-- <p>View a all Service</p> -->
+		      <button type="button" class="btn btn-outline-dark btn-lg btn-block"><a style="text-decoration: none";  href="/factory/product/"> More </a></button>
+		      <br><br><br>
+		    </div>
+	     </div>
+	</div>
+</section>
+<!-- End : producr -->
+{% endblock %}

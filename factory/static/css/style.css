@@ -1,0 +1,389 @@
+.myrows{
+    border: 3px solid green;
+}
+
+.mycols{
+    border: 3px solid red;
+}
+
+.mycontainer{
+    background-color: aqua;
+    border: 3px solid red;
+}
+
+/* ----------------------header section-------------------- */
+#topHeader{
+    border-bottom: 1px solid #ebebeb;
+}
+
+#topHeader a{
+    color: #2043e0;
+    font-weight: 600;
+    font-size: 0.89rem;
+}
+
+nav ul li a{
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* -----------------end header section------------- */
+
+/* ------------------Start :footer section--------------- */
+
+.top-footer p{
+color: #ebebeb;
+}
+
+.top-footer a{
+    color: #ebebeb;
+    font-weight: 600;
+    }
+    
+.full-footer{
+background-color: #34495e;
+
+}
+
+.top-footer h3{
+    color: #ebebeb;
+    }
+    
+.botton-footer pt-1{
+    /* background-color: #34495e; */
+    background-color: rgb(113, 180, 211);
+}
+
+/* -------End : footer */
+
+/* start:home page  */
+.top-hero-section{
+    background-color: #3498db;
+    color: #ebebeb;
+
+}
+
+.top-hero-section a{
+    color: #ebebeb;
+    font-weight: 600;
+
+}
+
+/* End: home page */
+
+/* Start:way choose */
+.qualities-img{
+    width: 150px;
+}
+
+/* End:way choose */
+
+/* Start: requrement */
+.requirement-section {
+    background-color: #e15f41;
+    color: white;
+}
+
+/* End: requrement */
+
+/* Start: newsletter section */
+.home-newsletter {
+    background-color: #e15f41;
+    color: white;
+}
+
+.home-newsletter .form-control{
+    height: 50px;
+    border-color: transparent;
+    border-radius: 20px 0 0 20px;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -ms-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;
+}
+
+.home-newsletter .btn{
+    min-height: 50px;
+    border-radius: 0 20px 20px 0;
+    border-radius: ;
+    background:#243c4f;
+    color: #fff;            /*    booten text color     */
+}
+
+/* End: newsletter section */
+
+
+/* Start: brand */
+.clients-section{
+    background-color: #f0f0f0;
+}
+/* End: Brand */
+
+/* Start : aboiut us */
+.breadcrumb-section{
+background-color: #e9ecef;
+}
+
+/* End : aboiut us */
+
+
+
+/* Start: newsletter section "about us" */
+.home-newsletters {
+    background-color: #ff7150;
+    color: white;
+}
+
+.home-newsletters .form-control{
+    height: 50px;
+    border-color: transparent;
+    border-radius: 20px 0 0 20px;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -ms-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;
+}
+
+.home-newsletters .btn{
+    min-height: 50px;
+    border-radius: 0 20px 20px 0;
+    border-radius: ;
+    background:#1a5688;
+    color: #fff;            /*    booten text color    #ff7150 */
+}
+
+/* End: newsletter section "about us" */
+
+/* start: contact us page */
+.address p{
+    font-weight: 600;
+}
+
+/* start : footer */
+p{
+    color:#999;
+}
+
+/* h2,h3{
+    color: rgb(104, 100, 100);
+} */
+ h2{
+     font-size: 18px;
+ }
+
+ .footer-top{
+    background: #2f2d2d;
+    padding: 80px 0;
+ }
+
+ .segment-one h3{
+    font-family: cursive; 
+    color: #fff;
+    letter-spacing: 3px;
+    margin: 10px 0;          /* "0" se viskama wala text peche hu hai        */
+ }
+
+ .segment-one p i:hover{
+     color: #fff;
+ }
+
+ /* -----------------------------segment-two setting----------------------------------- */
+ .segment-two h2{
+    font-family: cursive; 
+    color: #fff;
+    text-transform: uppercase;
+ }
+
+.segment-two h2::before{        /*    "|" lane ke liya or color kar ne ke liya */
+     content: '|';
+     color: #c65039;
+     padding-right: 9px;
+ }
+ 
+ .segment-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+.segment-two ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+
+.segment-two ul li a{
+    color: #999;
+    text-decoration: none;
+  
+}
+
+.segment-two a:hover{
+    color: #fff;
+   
+}
+
+/* -------------segment-three   setting----------------x-x-x-x-x-x-x-x-------------xxxxx-------------------------xx */
+
+.segment-three h2{
+    font-family: cursive; 
+    color: #fff;
+    text-transform: uppercase;
+ }
+
+.segment-three h2::before{        /*    "|" lane ke liya or color kar ne ke liya */
+     content: '|';
+     color: #c65039;
+     padding-right: 9px;
+ }
+
+.segment-three a{
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;                   /*  gaping barane ke liya */
+}
+
+.segment-three a i{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 12px;
+    transition: all 0.3s linear;
+}
+
+.segment-three a i:hover{
+    transform: scale(1.2);
+}
+
+.fa-facebook:hover{
+    color: #6351ce;
+}
+
+.fa-google-plus:hover{
+    color: coral;
+}
+
+.fa-twitter:hover{
+    color:blue;
+}
+
+.fa-instagram:hover{
+    color:darkorange;
+}
+/* -------------segment-
+four   setting----------------x-x-x-x-x-x-x-x-------------xxxxx-------------------------xx */
+
+.segment-four h2{
+    font-family: cursive; 
+    color: #fff;
+    text-transform: uppercase;
+ }
+
+.segment-four h2::before{        /*    "|" lane ke liya or color kar ne ke liya */
+     content: '|';
+     color: #c65039;
+     padding-right: 9px;
+ }
+
+ .segment-four form input[type=submit] {
+     background: #c65039;
+     border: none;
+     padding: 3px 15px;
+     margin-left: -5px;
+     color: #fff;
+     text-transform: uppercase;
+ }
+ 
+ .footer-bottom-text{
+     text-align: center;
+     background:#34495e;
+     line-height: 75px;
+ }
+/* end : footer */
+
+/* responsive css */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .md-mb-30{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+   .sm-mb-30{
+       margin-bottom: 30px;
+   }
+   .footer-top{
+       padding: 50px 0;
+   }
+}
+
+
+
+/* start : image dervice (product) */
+body {
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    color: #58595a;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #85878c;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* .tz-gallery .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    transition: 0.15s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+} */
+
+.tz-gallery .thumbnail:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.tz-gallery .lightbox img {
+    border-radius: 4px 4px 0 0;
+}
+
+.tz-gallery .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+/* End : image service (product) */
+
