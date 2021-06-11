@@ -1,0 +1,1 @@
+A online fabrication system project in python with Django Rest API is industrial project. This system has been designed to maintain a comprehensive database of factories, including the details of product and search product and service provide then create contact to customer. 
