@@ -5,7 +5,7 @@ A online fabrication system project in **python with Django Rest API is industri
 **Admid:** login || Add/Deleted product and service || User Contact View/Deleted.
 
 ========================================="**YOUTUBE  LINK**=====================================
-https://www.youtube.com/watch?v=cHn-4YPaV4I
+https://www.youtube.com/watch?v=rAzK4gbHMgI
 ==========================================**DESKTOP**===========================================
 ![desk](https://user-images.githubusercontent.com/85412055/121646447-f77bb080-cab2-11eb-9bb4-f096266b7018.png)
 
